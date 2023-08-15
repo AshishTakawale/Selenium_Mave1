@@ -6,12 +6,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class Actions_class {
 	public static void main(String[] arg) {
 		
-			System.setProperty("webdriver.chrome.driver",
-					"C:\\Users\\AshishTakawale\\eclipse-workspace\\Selenium_Maven1\\Driver109\\chromedriver.exe");
+			WebDriverManager.chromedriver().setup();
 			WebDriver driver = new ChromeDriver();
+			
 			driver.get("https://www.amazon.in/");
 			driver.manage().window().maximize();
 			Actions a = new Actions(driver);
