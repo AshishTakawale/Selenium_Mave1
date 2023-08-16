@@ -11,8 +11,6 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class Actions_class {
 	public static void main(String[] arg) {
 		
-		
-	
 			WebDriverManager.chromedriver().setup();
 			WebDriver driver = new ChromeDriver();
 			
